@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AC Bd</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<style>
+    body{
+        background-image: url("AC/images.jpg");
+        background-size: cover;
+    }
+    h1{
+        color: palevioletred;
+        text-align: center;
+
+    }
+    h1:hover{
+        text-decoration: underline;
+    }
+    img{
+        width: 200px;
+        height: 200px;
+        border: 1px solid palevioletred;
+    }
+    .first{
+        text-align: center;
+    }
+    .sec{
+        text-align: center;
+    }
+    .third{
+        text-align: center;
+    }
+    #candle{
+        text-align: center;
+    }
+    #bgrm{
+        border: none !important;
+        width: 230px !important;
+        height: 90PX !important;
+        animation: bounce; 
+        animation-duration: 2s;
+    }
+</style>
+</head>
+<body>
+<h1 onclick="control()" class="animate__animated animate__bounce">&hearts; Happy Birthday a chan lay &hearts;</h1>
+<div id="candle">
+
+</div>
+<div class="first animate__animated animate__flipInX">
+    <img src="AC/three (2).jpg" alt="">
+</div>
+<div class="sec">
+    <img src="AC/two.jpg" class="animate__animated animate__bounceInLeft" alt="">
+    <img src="AC/cc.jpg" class="animate__animated animate__bounceInRight" alt="">
+</div>
+<div class="third">
+    <img src="AC/one.jpg" class="animate__animated animate__bounceInLeft" alt="">
+    <img src="AC/four.jpg" class="animate__animated animate__slideInUp" alt="">
+    <img src="AC/five.jpg" class="animate__animated animate__bounceInRight" alt="">
+</div>
+
+<script>
+    function control(){
+        let candle = document.getElementById("candle");
+        candle.innerHTML = `<img src="AC/bgrm.png" id="bgrm">`;
+    }
+</script>
+
+</body>
+</html>
